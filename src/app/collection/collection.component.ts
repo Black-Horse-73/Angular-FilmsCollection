@@ -26,12 +26,10 @@ export class CollectionComponent {
   deleteFilm(i) {
     this.films.splice(i, 1)
   }
-  addFilm(poster, title, yearOfIssue) {
-    this.films.push(poster.value)
-    poster.value = '';
-    this.films.push(title.value)
-    title.value = '';
-    this.films.push(yearOfIssue.value)
-    yearOfIssue.value = '';
+  addFilm(post, titl, year) {
+    let newFilm = {}
+    this.films.poster.push(post.value)
+    this.films.title.push(titl.value)
+    this.films.yearOfIssue.push(year.value)
   }
 }
