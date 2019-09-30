@@ -27,11 +27,9 @@ export class CollectionComponent {
     this.films.splice(i, 1)
   }
   addFilm(post, titl, year) {
-    this.films.push({
-      poster: post.value,
-      title: titl.value,
-      yearOfIssue: year.value
-    })
-
+    this.films.push({ poster: post.value, title: titl.value, yearOfIssue: year.value })
+    post.value = '';
+    titl.value = '';
+    year.value = '';
   }
 }

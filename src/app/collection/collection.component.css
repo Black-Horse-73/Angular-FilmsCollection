@@ -1,4 +1,4 @@
-form {
+.filmAdd {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,6 +16,7 @@ label {
 
 input {
   border: 1px solid #1C52F2;
+  background: #FFFAF2;
 }
 
 ul {
@@ -55,4 +56,10 @@ p {
   font-family: Arial;
   font-size: 15px;
   color: #1C52F2;
+}
+
+button {
+  border: 1px solid #D40000;
+  border-radius: 3px;
+  background: #40E0D0;
 }
